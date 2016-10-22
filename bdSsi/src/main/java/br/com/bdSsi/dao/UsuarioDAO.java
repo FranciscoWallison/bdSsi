@@ -5,7 +5,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import br.triadworks.javaweb.modelo.Usuario;
+import br.com.bdSsi.model.Usuario;
 
 public class UsuarioDAO {
 	private Connection conexao;
