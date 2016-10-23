@@ -77,7 +77,7 @@ public class RelatorioDAO {
 							+ " registro_de_delito_interno.delito_presidiario_id = delito_no_presidio.id_delito_pres ");
 
 			ResultSet rs = stmt.executeQuery();
-			List<DelitoRelatorio> listaDataSource = new ArrayList<>();
+			List<DelitoRelatorio> listaDataSource = new ArrayList<DelitoRelatorio>();
 			DelitoRelatorio delitoRelatorio = null;
 
 			while (rs.next()) {

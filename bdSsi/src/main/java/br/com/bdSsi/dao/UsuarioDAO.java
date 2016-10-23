@@ -27,14 +27,12 @@ public class UsuarioDAO {
 
 			if (rs.next()) {
 				Long id = rs.getLong("id");
-				String nome = rs.getString("nome");
 				String uLogin = rs.getString("login");
 				String uSenha = rs.getString("senha");
 
 				usuario = new Usuario();
 
 				usuario.setId(id);
-				usuario.setNome(nome);
 				usuario.setLogin(uLogin);
 				usuario.setSenha(uSenha);
 			}

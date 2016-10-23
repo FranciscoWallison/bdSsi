@@ -47,5 +47,5 @@ public class DistritoRelatorio {
 	public void setQuantidadeBO(Integer quantidadeBO) {
 		this.quantidadeBO = quantidadeBO;
 	}
-	
+
 }
