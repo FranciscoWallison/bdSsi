@@ -9,7 +9,7 @@ public class ConnectionFactory {
 		try {
 			DriverManager.registerDriver(new com.mysql.jdbc.Driver());
 			return DriverManager.getConnection(
-					"jdbc:mysql://localhost/bdSsi", "root", "killer");
+					"jdbc:mysql://localhost/dataBaseName", "user", "password");
 		} catch (SQLException e) {
 			throw new RuntimeException(e);
 		}
