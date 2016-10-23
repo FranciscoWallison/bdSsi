@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServletRequest;
 
 import br.com.bdSsi.model.Usuario;
 
-@WebFilter(filterName = "FiltroAutorizacao", urlPatterns = "/*")
+@WebFilter(filterName = "FiltroAutorizacao", urlPatterns = "/sistema")
 public class AutorizacaoFilter implements Filter {
 
 	public void destroy() {
