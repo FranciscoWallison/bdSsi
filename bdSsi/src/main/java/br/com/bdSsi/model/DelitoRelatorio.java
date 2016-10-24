@@ -80,8 +80,8 @@ public class DelitoRelatorio {
 		this.horaDelito = horaDelito;
 	}
 
-	public SituacaoEnum getSituacao() {
-		return situacao;
+	public String getSituacao() {
+		return situacao.toString();
 	}
 
 	public void setSituacao(SituacaoEnum situacao) {

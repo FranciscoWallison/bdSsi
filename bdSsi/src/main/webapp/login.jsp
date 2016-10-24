@@ -13,6 +13,5 @@
 
 </form>
 
-<p>${msgUsuario}</p>
 
 <%@ include file="rodape.jsp"%>

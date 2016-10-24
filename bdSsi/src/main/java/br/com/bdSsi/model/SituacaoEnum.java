@@ -1,7 +1,7 @@
 package br.com.bdSsi.model;
 
 public enum SituacaoEnum {
-	A("Culpado"), B("Vitima");
+	culpado("Culpado"), vitima("Vítima");
 
 	private String descricao;
 

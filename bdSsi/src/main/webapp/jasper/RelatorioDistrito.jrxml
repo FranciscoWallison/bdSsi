@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="RelatorioDistrito" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="48969b21-946e-40f5-b61e-f3411791351e">
+	<property name="ireport.zoom" value="1.464100000000004"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="headersCinza" mode="Opaque" backcolor="#C0C0C0" fill="Solid"/>
+	<parameter name="HEADER_1" class="java.lang.String"/>
+	<parameter name="TITLE" class="java.lang.String"/>
+	<parameter name="HEADER_2" class="java.lang.String"/>
+	<parameter name="HEADER_3" class="java.lang.String"/>
+	<parameter name="HEADER_4" class="java.lang.String"/>
+	<parameter name="HEADER_5" class="java.lang.String"/>
+	<parameter name="LOGO" class="java.io.InputStream"/>
+	<field name="identificacaoDistrito" class="java.lang.Integer"/>
+	<field name="nome" class="java.lang.String"/>
+	<field name="quantidadeAgentes" class="java.lang.Integer"/>
+	<field name="quantidadeBO" class="java.lang.Integer"/>
+	<field name="cargo" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="30" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="-1" width="555" height="30" uuid="d55e1e10-fbd9-4bd5-a155-3ac96ad66635"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{TITLE}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="29" width="555" height="1" uuid="63ca7961-97bd-4b9f-b01d-b254c0a1dafa"/>
+			</line>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="20" splitType="Stretch">
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement style="headersCinza" x="0" y="0" width="111" height="20" uuid="bf8c61ee-d8ff-4f48-8c90-bba21692e9fb"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{HEADER_1}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement style="headersCinza" x="222" y="0" width="111" height="20" uuid="9e51d762-f11d-41ff-a916-0851b1c3e2ee"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{HEADER_3}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement style="headersCinza" x="333" y="0" width="111" height="20" uuid="338b6754-fc39-4578-ae7e-68c00f57bccc"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{HEADER_4}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement style="headersCinza" x="444" y="0" width="111" height="20" uuid="be7c78bf-f4a2-4205-b4b0-dc7b88b1a6c0"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{HEADER_5}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement style="headersCinza" x="111" y="0" width="111" height="20" uuid="83b13286-46c6-4ff1-916e-b49bdef8ada7"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{HEADER_2}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="0" y="0" width="111" height="20" uuid="bbfb15ae-fc55-4688-984c-30c5c5a2e097"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{identificacaoDistrito}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="111" y="0" width="111" height="20" uuid="423b78c0-8a5b-4ac0-a8e9-155badd70fd1"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nome}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="222" y="0" width="111" height="20" uuid="ffae8588-ed05-4ab6-b57c-9f91154a67ad"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cargo}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="333" y="0" width="111" height="20" uuid="ddd93627-eabd-408b-b114-02ccc229912e"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{quantidadeAgentes}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="444" y="0" width="111" height="20" uuid="350c3e56-2926-473c-ab36-a67db20383af"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{quantidadeBO}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="23" splitType="Stretch"/>
+	</pageFooter>
+	<lastPageFooter>
+		<band height="119">
+			<staticText>
+				<reportElement x="0" y="102" width="555" height="17" uuid="df817b4a-3705-4a3d-9914-35c760fee3e6"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<text><![CDATA[SSI Copyright 2016 - Todos os direitos Reservados ]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="0" width="555" height="1" uuid="d0f2e5e3-ad5e-4849-847c-dbd25d51005c"/>
+			</line>
+			<image hAlign="Center" vAlign="Middle">
+				<reportElement x="111" y="1" width="333" height="101" uuid="fba230ca-41dc-45ab-95fd-32f64ae2128f"/>
+				<imageExpression><![CDATA[$P{LOGO}]]></imageExpression>
+			</image>
+		</band>
+	</lastPageFooter>
+</jasperReport>
