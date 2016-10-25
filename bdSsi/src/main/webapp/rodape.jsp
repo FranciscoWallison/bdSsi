@@ -1,4 +1,4 @@
-<br><br><br><br><br><br>
+<br><br>
 <hr class="divider">
 <div align="center">
 	<img src='<c:url value="images/itapipoca.png"/>'

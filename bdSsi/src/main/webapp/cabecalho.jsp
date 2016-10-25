@@ -14,8 +14,8 @@
 			</div>
 			<div>
 				<ul class="nav navbar-nav">
-					<li><a href="">13º Distrito</a></li>
-					<li><a href="">3º Distrito</a></li>
+					<li><a href="decimoTerceiro.jsp">13º Distrito</a></li>
+					<li><a href="terceiro.jsp">3º Distrito</a></li>
 					<li><a href="index.jsp">Sobre a Secretaria de Segurança</a></li>
 				</ul>
 			</div>

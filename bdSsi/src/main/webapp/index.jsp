@@ -1,6 +1,6 @@
 <%@ include file="/cabecalho.jsp"%>
 
-
+<br><br>
 <div class="container">
 	<h1 class="display-3">Bem-vindo ao Reporting SSI</h1>
 	<p style="text-align: justify">O sistema Reporting SSI é um sistema desenvolvido para ajudar na gestão da Secretaria de Segurança de Itapipoca,
@@ -17,11 +17,9 @@
 		<div class="col-md-4">
 			<h2>13º Distrito</h2>
 			<p style="text-align: justify">Localizado na Rua Vicente Siebra, Alto Alegre, o 13º Distrito é um dos mais novos Distritos
-			de Itapipoca, com 6 anos de sua inauguração, o Distrito veio causando um impacto muito positivo
-			na questão da administração dos presídios de Itapipoca, além de contar com uma excelente equipe
-			responsável pela maiora das investigações do município.</p>
+			de Itapipoca, com 6 anos de sua inaugura....</p>
 			<p>
-				<a class="btn btn-secondary btn-lg active" href="#" role="button">Leia mais
+				<a class="btn btn-secondary btn-lg active" href="decimoTerceiro.jsp" role="button">Leia mais
 					»</a>
 			</p>
 			<br>
@@ -30,11 +28,9 @@
 		<div class="col-md-4"  style="float: right">
 			<h2>3º Distrito</h2>
 			<p style="text-align: justify">Localizado na Rua Aureliano Matos, Praça Matriz, Centro, o 
-			3º Distrito de Itapipoca vem, a mais de 65 anos, realizando um trabalho
-			formidável para a comunidade, sendo considerado fundamental para o segurança
-			e administração do sistema carcerário.</p>
+			3º Distrito de Itapipoca vem....</p>
 			<p>
-				<a class="btn btn-secondary btn-lg active" href="#" role="button">Leia mais »</a>
+				<a class="btn btn-secondary btn-lg active" href="terceiro.jsp" role="button">Leia mais »</a>
 			</p>
 		</div>
 	</div>
