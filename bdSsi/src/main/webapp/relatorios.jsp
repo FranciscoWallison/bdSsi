@@ -13,8 +13,7 @@
 %>
 
 <div class="container">
-	<h1
-		style="text-align: center; background: rgb(40, 96, 144); color: rgb(255, 255, 255)">Relatórios
+	<h1 style="text-align: center; background: rgb(40, 96, 144); color: rgb(255, 255, 255)">Relatórios
 		da Secretaria de Segurança de Itapipoca</h1>
 	<table class="table table-stripped table-hover table-bordered">
 		<form action="relatorioDistrito" method="POST">
@@ -31,12 +30,12 @@
 					type="submit" value="Gera Relatório" /></th>
 			</tr>
 		</form>
-	</table>
-
-	<br>
-	<br>
+	
 	<form action="LogoutServlet" method="post">
-		<input class="btn btn-primary" style="float: left" type="submit"
-			value="Logout" />
+		<th></th>
+		<th><input class="btn btn-primary" style="float: right" type="submit"
+			value="Logout" /></th>
 	</form>
-	<%@ include file="/rodape.jsp"%>
+</table>
+
+<%@ include file="/rodape.jsp"%>
