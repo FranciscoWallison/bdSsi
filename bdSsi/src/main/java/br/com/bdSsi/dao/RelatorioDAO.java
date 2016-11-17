@@ -60,7 +60,10 @@ public class RelatorioDAO {
 
 		} catch (SQLException e) {
 			throw new RuntimeException(e);
+		} finally {
+			conexao.close();
 		}
+
 	}
 
 	public List<DelitoRelatorio> dataSourceRelatorioDelito() throws SQLException {
@@ -115,7 +118,9 @@ public class RelatorioDAO {
 
 		} catch (SQLException e) {
 			throw new RuntimeException(e);
+		} finally {
+			conexao.close();
 		}
-
 	}
+
 }
