@@ -98,6 +98,7 @@ public class RelatorioDAO {
 				SituacaoEnum situacao = SituacaoEnum.valueOf(rs.getString("situacaoNoDelito"));
 
 				delitoRelatorio = new DelitoRelatorio();
+				delitoRelatorio.setNome(nome);
 				delitoRelatorio.setRg(rg);
 				delitoRelatorio.setDataNascimento(dataNascimento);
 				delitoRelatorio.setEstadoCivil(estadoCivil);
